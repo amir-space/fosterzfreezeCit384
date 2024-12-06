@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/favicon-32x32.png" type="image/x-icon">
+  <title>Contact Us - fostersfreeze</title>
+  <style>
+    /* Reset basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Style the body */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+
+    /* Navbar container */
+    .navbar {
+      background-color: #310ff3;
+   
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #555;
+    }
+
+    /* Page container */
+    .contact-container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .info-section, .form-section {
+      margin-bottom: 20px;
+    }
+
+    .info-section p {
+      margin-bottom: 10px;
+    }
+
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-section label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-section input, .form-section textarea, .form-section button {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-section button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .form-section button:hover {
+      background-color: #1336d3;
+    }
+
+    /* Google Map */
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="restaurant.html">Home</a></li>
+      <li><a href="about us.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="Our location.html">Our Location</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+
+    <!-- Contact Information -->
+    <div class="info-section">
+      <h2>Our Information</h2>
+      <p><strong>Address:</strong> 201 S Glenoaks Street, Burbank, CA 91502</p>
+      <p><strong>Phone:</strong> (818) 555-1234</p>
+      <p><strong>Email:</strong> info@fostersfreeze.com</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="form-section">
+      <h2>Send Us a Message</h2>
+      <form action="your-server-endpoint" method="post">
+
+        <label for="name">
+            <strong>Your Name</strong></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Google Map -->
+    <div class="map-container">
+      <h2>Find Us Here</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.228625785269!2d-118.30896848478112!3d34.1814384805708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29625f98a6a87%3A0x8dd4e5d60c2d0c3d!2s201%20S%20Glenoaks%20Blvd%2C%20Burbank%2C%20CA%2091502%2C%20USA!5e0!3m2!1sen!2sus!4v1679000000000!5m2!1sen!2sus"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+</body>
+</html>
